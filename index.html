@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico"  href="imagens/icons/harvardIco.ico" />
+    <title>Harvard University</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+</style>
+<body style = "background-color:white;height:515vh;overflow-x: hidden;">
+<div id = "menu1" style = "background-color:#30393a;width:100%;height:40px;color:white;"></div>
+<div id = "search"></div>
+<center>
+<div id = "logo" style = "position: relative;top:-7px;z-index: 999;"></div>
+</center>
+<div id = "menu2" style = "background-color:white;width:100%;height:50px;position: relative;
+top:-172px"></div>
+<div id = "menu3" style = "background-color:#f3f3f1;width:100%;height:40px;position: relative;
+top:-180px;"></div>
+<div id = "conteudoParte1" style = "background-color:#a51c30;width:100%;height:195vh;position: relative;
+top:-120px;">
+<div id = "imagem01" style = "position: relative;top:60px;left:3%;">
+</div>
+<div id = "" style = "width:630px;height:500px;background-color: rgba(0,0,0,0.625);
+position: relative;top:-444px;left:50%;">
+<a style = "color:white;text-align: center;" id = "titulo"></a>
+<p style = "color:white;" id = "paragrafo1"></p>
+<a style = "color:white;" id = "link"></a>
+</div>
+<div style = "position:relative;top:-350px;left:3%;display:flex;">
+<div id = "imagem02" style = "margin:10px;"></div>
+<div id = "imagem03" style = "margin:10px;"></div>
+<div id = "imagem04" style = "margin:10px;"></div>
+<div id = "imagem05" style = "margin:10px;"></div>
+</div>
+<div style = "position:relative;top:-350px;left:3%;display:flex;">
+<div style = "background-color:white;width:298px;height:245px;
+position: relative;top:-20px;margin:10px;">
+<a id = "titulo2"></a>
+<p id = "paragrafo2"></p>
+<a></a>
+<input>
+</div>
+<div style = "background-color:white;width:298px;height:245px;
+position: relative;top:-20px;margin:10px;">
+<a id = "titulo3"></a>
+<p id = "paragrafo3"></p>
+<a></a>
+<input>
+</div>
+<div style = "background-color:white;width:298px;height:245px;
+position: relative;top:-20px;margin:10px;">
+<a id = "titulo4"></a>
+<p id = "paragrafo4"></p>
+<a></a>
+<input>
+</div>
+<div style = "background-color:white;width:298px;height:245px;
+position: relative;top:-20px;margin:10px;">
+<a id = "titulo5"></a>
+<p id = "paragrafo5"></p>
+<a></a>
+<input>
+</div>
+</div>
+</div>
+<div id = "conteudoParte2">
+<div id = "titulo6" style = "color:black;text-align: center;top:-50px;position: relative;"></div>
+<div id = "video" style = "position: relative;left:2.5%;"></div>
+</div>
+<div id = "conteudoParte3" style = "width:100%;height:40vh;position: relative;top:850px;top:80px;
+background-color: #bac5c6;">
+<a id = "titulo7"></a>
+<a id = "link2"></a>
+</div>
+<div id = "rodape" style = "background-color: #414141;width:100%;height:125vh;">
+<a id = "titulo8"></a>
+<a id = "titulo8PT2"></a>
+<div id = "email"></div>
+<a id = "link3"></a>
+<center>
+<hr style = "width:80%;border-style: solid;border-width: 1px;border-color: white;
+position: relative;top:500px;"/>
+</center>
+<p id = "corp"></p>
+<div id = "menu"></div>
+<div id = "icons"></div>
+<div id = "logo2"></div>
+</div>
+<script type = "text/babel">
+/*Carrega as imagens*/
+ReactDOM.render(
+    <img src = "imagens/logo.png"/>,
+    document.getElementById('logo')
+);
+ReactDOM.render(
+    <img src = "imagens/banners/Vaccine_1300.png"/>,
+    document.getElementById('imagem01')
+);
+ReactDOM.render(
+    <img src = "imagens/banners/imagem01.png"/>,
+    document.getElementById('imagem02')
+);
+ReactDOM.render(
+    <img src = "imagens/banners/imagem02.png"/>,
+    document.getElementById('imagem03')
+);
+ReactDOM.render(
+    <img src = "imagens/banners/imagem03.png"/>,
+    document.getElementById('imagem04')
+);
+ReactDOM.render(
+    <img src = "imagens/banners/imagem04.png"/>,
+    document.getElementById('imagem05')
+);
+
+
+/* Paragrafos e titulos*/
+ReactDOM.render(
+    <a style = {{position:"relative",left:"12%",top:"180px",fontSize:"40px"}}> COVID-19 vaccine candidate </a>,
+    document.getElementById('titulo')
+);
+ReactDOM.render(
+   <p style = {{position:"relative",
+   left:"3%",top:"200px",fontSize:"20px"}}>A research team reports vaccine protection against pneumonia and death in severe COVID-19 cases</p>,
+   document.getElementById('paragrafo1')
+);
+ReactDOM.render(
+   <a style = {{position:"relative",left:"35%",top:"250px"}}>
+   <div style = {{borderStyle:"solid",borderWidth:"1px",borderColor:"white",width:"200px",height:"50px",
+   textAlign:"center",cursor:"pointer"}}>
+   <p style = {{position:"relative",top:"17px"}}>
+   SEE THE RESEARCH
+   </p>
+   </div>
+   </a>,
+   document.getElementById('link')
+);
+ReactDOM.render(
+   <a style = {{position:"relative",left:"7%",top:"20px",color:"#414141",
+   fontSize:"25px"}}>Celebrating <br/> Convocation</a>,
+   document.getElementById('titulo2')
+);
+ReactDOM.render(
+   <p style = {{position:"relative",top:"60px",color:"#414141"}}>In the first-ever virtual Convocation, the Harvard College Class of 2024 was welcomed to Harvard</p>,
+   document.getElementById('paragrafo2')
+);
+ReactDOM.render(
+   <a style = {{position:"relative",left:"7%",top:"20px",color:"#414141",
+   fontSize:"25px"}}>Health care for the trans community</a>,
+   document.getElementById('titulo3')
+);
+ReactDOM.render(
+   <p style = {{position:"relative",top:"60px",color:"#414141"}}>HBS student Soltan Bryce is chief of growth for Plume, providing telehealth services to the trans community</p>,
+   document.getElementById('paragrafo3')
+);
+ReactDOM.render(
+   <a style = {{position:"relative",left:"7%",top:"20px",color:"#414141",
+   fontSize:"25px"}}>How is culture created?</a>,
+   document.getElementById('titulo4')
+);
+ReactDOM.render(
+   <p style = {{position:"relative",top:"60px",color:"#414141"}}>According to a new study, the hunting tendencies and preferences of bonobos show proof of culture</p>,
+   document.getElementById('paragrafo4')
+);
+ReactDOM.render(
+   <a style = {{position:"relative",left:"7%",top:"20px",color:"#414141",
+   fontSize:"25px"}} >Coronavirus summer</a>,
+   document.getElementById('titulo5')
+);
+ReactDOM.render(
+   <p style = {{position:"relative",top:"60px",color:"#414141"}} >Three undergraduate students share what they've been up to this summer during the coronavirus pandemic</p>,
+   document.getElementById('paragrafo5')
+);
+
+/* Menu01 */
+ReactDOM.render(
+    <ul style={{ listStyleType: "none",display:"flex" , left:"30%",position:"relative",top:"-10px",
+    fontFamily: "Arial",fontSize:"15px" }}>
+        <li style = {{margin: "20px"}}>Faculty</li>
+        <li  style = {{margin: "20px"}}>Staff</li>
+        <li  style = {{margin: "20px"}}>Students</li>
+        <li  style = {{margin: "20px"}}>Alumni</li>
+        <li  style = {{margin: "20px"}}>Parents</li>
+        <li  style = {{margin: "20px"}}>Visitors</li>
+        <li  style = {{margin: "20px"}}>Media</li>
+        <li> 
+        <img style = {{position:"relative", left: "70px",top:"18px",zIndex:"100"}} src = "imagens/icons/search.png"/>
+        <input
+        placeholder = "What can we help you find ?" type = "search"
+         style = {{position:"relative", left:"10%",top:"11px",height:"37px",width:"268px",
+        backgroundColor:"black",textAlign:"center",color:"white"}}/>  </li>
+    </ul>,
+    document.getElementById('menu1')
+);
+
+/* Menu02 */
+ReactDOM.render(
+    <ul style={{ listStyleType: "none",display:"flex" , left:"5%",position:"relative",top:"-10px",
+    fontFamily: "Arial",fontSize:"15px",color:"#ca4d60",fontFamily:"",fontSize:"23px" }}>
+        <li style = {{margin: "20px"}}>About Harvard</li>
+        <li style = {{margin: "20px", position: "relative", left:"6%"}}>Admissions & Aid</li>
+        <li style = {{margin: "20px", position: "relative", left:"28%"}}>Schools</li>
+        <li style = {{margin: "20px",position:"relative",left:"40%"}}>On Campus</li>
+    </ul>,
+    document.getElementById('menu2')
+);
+
+/* Menu03 */
+ReactDOM.render(
+    <ul style={{ listStyleType: "none",display:"flex" , left:"5%",position:"relative",top:"-10px",
+    fontFamily: "Arial",fontSize:"15px",color:"#ca4d60",fontFamily:"",fontSize:"23px" }}>
+        <li style = {{margin: "20px"}}>Gazette News</li>
+        <li style = {{margin: "20px", position: "relative", left:"11%"}}>Events</li>
+        <li style = {{margin: "20px", position: "relative", left:"38%"}}>Visit</li>
+        <li style = {{margin: "20px",position:"relative",left:"54%"}}>Give</li>
+    </ul>,
+    document.getElementById('menu3')
+);
+
+/* Titulo 6 e um video*/
+ReactDOM.render(
+    <a style = {{fontSize:"40px",position:"relative",color:"#414141",textAlign:"center"}}>Harvard experts explain loneliness</a>,
+    document.getElementById('titulo6')
+);
+
+ReactDOM.render(
+    <video controls>
+    <source src="videos/video01.mp4" type="video/mp4"/>
+    </video>,
+    document.getElementById('video')
+);
+
+/* Titulo 7 e o link2*/
+ReactDOM.render(
+    <a style  = {{position:"relative",left:"7%",
+    position:"relative",top:"100px",fontSize:"40px"}}>Explore Harvard's online courses and learning content</a>,
+    document.getElementById('titulo7')
+);
+
+ReactDOM.render(
+    <a style  = {{position:"relative",left:"73%",position:"relative",top:"50px",color:"#a51c30"}}>
+    <div style = {{borderStyle:"solid",borderWidth:"1px",borderColor:"#a51c30",width:"200px",height:"50px",textAlign:"center",cursor:"pointer"}}>
+   <p style = {{position:"relative",top:"17px"}}>
+    VIEW COURSES
+    </p>,
+    </div>,
+    </a>,
+    document.getElementById('link2')
+)
+
+/*Rodape*/
+
+ReactDOM.render(
+    /* Adiciona um titulo no rodape*/
+    <a style = {{color:"white",position:"relative",top:"100px",left:"28%",
+    fontSize:"30px",top:"200px"}}>Get the latest Harvard Gazette news delivered to <br/>
+    </a>,
+    document.getElementById("titulo8")
+);
+
+ReactDOM.render(
+    <a style = {{color:"white",position:"relative",top:"100px",left:"45%",
+    fontSize:"30px",top:"200px"}}> your inbox.</a>,
+    document.getElementById("titulo8PT2")
+)
+ReactDOM.render(
+    /* Adiciona um input no rodape*/
+    <input placeholder = "your_email@gmail.com" 
+    style = {{backgroundColor:"white",position:"relative",
+    left:"30%",top:"235px",width:"300px",height:"55px"}} type = "text" />,
+    document.getElementById("email")
+);
+
+ReactDOM.render(
+    /* Adiciona um link para enviar email*/
+    <a style  = {{position:"relative",left:"54%",position:"relative",top:"181px",color:"white"}}>
+    <div style = {{borderStyle:"solid",borderWidth:"1px",borderColor:"white",width:"200px",height:"50px",textAlign:"center",cursor:"pointer"}}>
+    <p style = {{position:"relative",top:"17px"}}>
+    SUBSCRIBE
+    </p>
+    </div>
+    </a>,
+    document.getElementById('link3')
+);
+
+ReactDOM.render(
+
+    /*Adiciona um menu no rodape*/
+    <ul style = {{listStyleType:"none"}}>
+
+    <div style = {{color:"#d2d7d3",position:"relative",left:"15%",top:"308px"}}>
+        <li style = {{margin:"10px"}}>WEBSITE</li>
+        <li style = {{margin:"10px"}}>Accessibility</li>
+        <li style = {{margin:"10px"}}>Digital Accessibility</li>
+        <li style = {{margin:"10px"}}>Sitemap</li>
+    </div>,
+
+    <div style = {{color:"#d2d7d3",position:"relative",left:"28%",top:"167px"}}>
+        <li style = {{margin:"10px"}}>GET IN TOUCH</li>
+        <li style = {{margin:"10px"}}>Contact Harvard</li>
+        <li style = {{margin:"10px"}}>Maps & Directions</li>
+        <li style = {{margin:"10px"}}>Jobs</li>
+        <li style = {{margin:"10px"}}>Social Media</li>
+    </div>,
+
+    <div style = {{color:"#d2d7d3",position:"relative",left:"40%"}}>
+        <li style = {{margin:"10px"}}>SECURITY & BRAND</li>
+        <li style = {{margin:"10px"}}>Privacy Statement</li>
+        <li style = {{margin:"10px"}}>Report Copyright Infringement</li>
+        <li style = {{margin:"10px"}}>Report Security Issue</li>
+        <li style = {{margin:"10px"}}>Trademark Notice</li>
+    </div>
+
+    </ul>,
+    document.getElementById("menu")
+);
+
+ReactDOM.render(
+    <p style = {{color:"white",
+    position:"relative",top:"510px",left:"10%"}}>© 2020 The President and Fellows of Harvard College</p>,
+    document.getElementById('corp')
+)
+
+ReactDOM.render(
+    /* Carrega os icones do rodape */
+    <ul style = {{listStyleType:"none",position:"relative",left:"58%",display:"flex",top:"-150px"}}>
+        <li style = {{margin:"10px"}}> <img src = "../"/> </li>
+        <li style = {{margin:"10px"}}> <img src = "../"/> </li>
+        <li style = {{margin:"10px"}}> <img src = "../"/> </li>
+        <li style = {{margin:"10px"}}> <img src = "../"/> </li>
+        <li style = {{margin:"10px"}}> <img src = "../"/> </li>
+        <li style = {{margin:"10px"}}> <img src = "../"/> </li>
+        <li style = {{margin:"10px"}}> <img src = "../"/> </li>
+    </ul>,
+    document.getElementById("icons")
+);
+
+ReactDOM.render(
+    /* Carrega a imagem da logo no rodape*/
+    <img style = {{position:"relative",left:"85%",top:"-110px"}} src = "../"/>,
+    document.getElementById("logo2")
+);
+
+ReactDOM.render(
+    /* Adiciona uma linha no rodape*/
+    <hr></hr>,
+);
+
+ReactDOM.render(
+    /*Adiciona um paragrafo no rodape*/
+    <p>© 2020 The President and Fellows of Harvard College</p>,
+    document.getElementById('tituloRodape'),
+    document.getElementById('email'),
+    document.getElementById('linkRodape'),
+    document.getElementById('menuRodape')
+)
+</script>
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</body>
+</html>
